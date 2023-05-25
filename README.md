@@ -53,10 +53,6 @@ Contributions to Connections are welcome! If you'd like to contribute, please fo
 3. Commit your changes and push the branch to your forked repository.
 4. Submit a pull request, explaining the changes you've made.
 
-## License
-
-[Specify the license under which the project is distributed, e.g., MIT License]
-
 ## Contact
 
 For any inquiries or questions regarding Connections, please contact [thulanegulube@gmail.com].
