@@ -38,7 +38,7 @@ The Connections project is built using the following technologies:
 
 To get started with Connections, follow these steps:
 
-1. Clone the repository: `git clone [repository URL]`
+1. Clone the repository: `git clone [git@github.com:Mzansi45/Connections.git]`
 2. JavaFx modules(--add-modules=javafx.base,javafx.controls,javafx.fxml,javafx.graphics,javafx.media)
 3. Build the project using a Java IDE or compile the Java files using the command line.
 4. Run the project, starting the main application class.
