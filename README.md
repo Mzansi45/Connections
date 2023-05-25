@@ -30,7 +30,7 @@ The Connections project is built using the following technologies:
 
 - **Programming Language**: Java
 
-- **Graph ADT**: Custom implementation or a graph library (e.g., JGraphT, Jung, or your own implementation)
+- **Graph ADT**: Custom implementation(Adjecency list graph)
 
 - **User Interface**: JavaFX for building the graphical user interface (GUI)
 
