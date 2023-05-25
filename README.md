@@ -1,91 +1,63 @@
-"# Connections" 
+# Connections
 
-# Job Board Platform with Graph ADT
+Connections is a job board platform developed as a mini project for the University of Johannesburg. The project aims to test the understanding of graphs and their application in connecting companies, job seekers, and job postings.
 
-## Problem Description
+## Problem Statement
 
-High levels of unemployment in South Africa are a persistent socio-economic challenge. Despite government efforts to create jobs and stimulate economic growth, the unemployment rate remains stubbornly high, particularly among young people and those without formal qualifications.
+High levels of unemployment and the challenge of finding suitable candidates for job openings are persistent issues. The Connections project addresses these challenges by leveraging a graph data structure and graph algorithms to connect job seekers with relevant job postings based on their skills and qualifications.
 
-To address this problem, this project proposes creating a job board platform that connects job seekers with companies. The platform will utilize the Graph ADT (Abstract Data Type) to represent the relationships between job seekers, companies, and job postings. Graph algorithms will be employed to match job seekers with relevant job postings based on their qualifications and preferences.
+## Core Features
 
-## Objects and Attributes in the Nodes
+Connections offers the following core features:
 
-The following objects and their attributes will be contained in the nodes:
+- **Company Profiles**: Companies can create profiles and provide information such as company name, contact details, industry, and hiring preferences.
 
-### Job Seeker Node:
+- **Job Postings**: Companies can post job openings, specifying job titles, descriptions, required qualifications, location, and application deadlines.
 
-- ID: unique identifier for the job seeker
-- Name: name of the job seeker
-- Contact Information: email address, phone number, etc.
-- Location: city, province, etc.
-- Qualifications: education level, work experience, skills, etc.
-- Work Preferences: job title, industry, work schedule, etc.
+- **Job Seeker Profiles**: Job seekers can create profiles and include details such as their skills, qualifications, work experience, and job preferences.
 
-### Company Node:
+- **Job Matching**: The platform uses a graph data structure to connect job seekers, job postings, and companies. Job seekers with matching skills and qualifications are connected to relevant job postings, and the company that posted the job is also linked to it.
 
-- ID: unique identifier for the company
-- Name: name of the company
-- Contact Information: email address, phone number, etc.
-- Location: city, province, etc.
-- Industry: type of business, e.g. finance, healthcare, etc.
-- Company Size: number of employees, revenue, etc.
-- Hiring Preferences: job titles, qualifications, etc.
+- **Application Management**: Job seekers can apply for jobs they are interested in, creating an edge between the company and the job seeker. The platform keeps track of application status and relevant details.
 
-### Job Posting Node:
+- **Graph ADT**: The project utilizes a graph abstract data type (ADT) to represent and store the connections between companies, job seekers, and job postings.
 
-- ID: unique identifier for the job posting
-- Title: title of the job posting
-- Description: a brief description of the job responsibilities and requirements
-- Location: city, province, etc.
-- Qualifications: education level, work experience, skills, etc.
-- Salary: salary range, hourly rate, etc.
-- Application Deadline: the date by which applications must be submitted
+- **Graph Algorithms**: Graph algorithms, such as breadth-first search (BFS) and depth-first search (DFS), are implemented to efficiently traverse the graph and find suitable matches based on skills, qualifications, and other preferences.
 
-## Role of Edges and their Attributes
+## Technologies Used
 
-The edges in the graph will store additional information and play a crucial role in the solution. The following are the edge types and their attributes:
+The Connections project is built using the following technologies:
 
-### Job Application Edge:
+- **Programming Language**: Java
 
-- Source Node: job seeker node
-- Destination Node: job posting node
-- Attributes: date of application, status of the application (e.g., pending, accepted, rejected), resume or cover letter (optional)
+- **Graph ADT**: Custom implementation or a graph library (e.g., JGraphT, Jung, or your own implementation)
 
-This edge represents a job seeker's application for a specific job posting. It helps track the job seeker's application history, status, and any attached documents.
+- **User Interface**: JavaFX for building the graphical user interface (GUI)
 
-### Interview Edge:
+## Getting Started
 
-- Source Node: job seeker node
-- Destination Node: company node
-- Attributes: date of interview, type of interview (e.g., phone, in-person), interviewer's name, interview notes (optional)
+To get started with Connections, follow these steps:
 
-This edge represents an interview between a job seeker and a company. It tracks interview details such as the date, type, interviewer's name, and any notes for evaluation purposes.
+1. Clone the repository: `git clone [repository URL]`
+2. JavaFx modules(--add-modules=javafx.base,javafx.controls,javafx.fxml,javafx.graphics,javafx.media)
+3. Build the project using a Java IDE or compile the Java files using the command line.
+4. Run the project, starting the main application class.
+5. Explore the functionalities and interact with the GUI.
 
-### Job Offer Edge:
+## Contribution Guidelines
 
-- Source Node: company node
-- Destination Node: job seeker node
-- Attributes: date of the offer, salary or hourly rate, benefits package, start date
+Contributions to Connections are welcome! If you'd like to contribute, please follow these guidelines:
 
-This edge represents a job offer made by a company to a job seeker. It captures details such as the date of the offer, salary, benefits, and the agreed-upon start date.
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes and push the branch to your forked repository.
+4. Submit a pull request, explaining the changes you've made.
 
-## Algorithms and Complexity
+## License
 
-Graph algorithms will be employed to match job seekers with job postings based on their qualifications and preferences. Algorithms such as breadth-first search, depth-first search, Dijkstra's algorithm, or A* algorithm can be utilized.
+[Specify the license under which the project is distributed, e.g., MIT License]
 
-By using graph algorithms, the job board platform can efficiently and effectively match job seekers with job postings that fit their qualifications and preferences. The time complexity of the graph algorithms used will depend on the specific algorithm implemented and the size and complexity of the graph. Generally, graph algorithms have a time complexity of O(V+E), where V is the number of vertices (nodes) in the graph and E is the number of edges.
+## Contact
 
-## Project Justification
-
-Using a graph data structure to solve the problem of job matching is beneficial for several reasons:
-
-1. Efficient Searching: Representing job seekers, companies, and job postings as nodes in a graph allows for efficient searching and matching algorithms to be applied, enabling quick and effective connections between job seekers and companies.
-
-2. Handling Complex Relationships: The graph data structure can handle complex relationships and dependencies between job seekers, companies, and job postings, allowing for more accurate and personalized job matching based on qualifications, preferences, and requirements.
-
-3. Precise Job Matching: By considering multiple factors and utilizing graph algorithms, the job board platform can provide more precise and personalized job recommendations and matches, leading to increased successful job placements and reduced unemployment rates.
-
-4. Flexibility and Scalability: The graph data structure provides flexibility and scalability, allowing the platform to handle a growing number of job seekers, companies, and job postings while maintaining efficient matching capabilities.
-
-By leveraging the power of graph algorithms and the flexibility of a graph data structure, this job board platform aims to address unemployment challenges in South Africa and stimulate economic growth.
+For any inquiries or questions regarding Connections, please contact [thulanegulube@gmail.com].
 
